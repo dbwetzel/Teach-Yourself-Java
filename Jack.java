@@ -7,7 +7,7 @@ public class Jack {
   
   public static void main(String[] args) {
     System.out.println("This is the house that Jack built.");
-    System.out.println("(generative poetry edition)\n");
+    System.out.println("(additive poetry edition)\n");
     System.out.println();
     for(int i = 0; i < noun.length; i++){
       verse(i);
