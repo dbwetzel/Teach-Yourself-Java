@@ -26,15 +26,16 @@ public class Jack {
       ui.nextLine(); // throw away the carriage return
       if(c.matches("yes")){
         System.out.println("let's proceed!");
-        System.out.println("Enter a noun:");  
+        System.out.println("Enter a noun (improper, preferably a creature of some sort):");  
         String n = ui.nextLine();
         // add n to the noun[] array
         int newVerse = noun.length; // number of the next verse
         noun = addToStringArray(noun, n);
-        System.out.println("Enter a verb: (applies to the " + noun[noun.length-2] + ")");
+        System.out.println("Enter a verb: (transitive, past tense, applies to the " + noun[noun.length-2] + ")");
         String v = ui.nextLine();
         // add v to the verb[] array
         verb = addToStringArray(verb, v);
+        System.out.println();
         verse(newVerse);
         return true;
       } else {
